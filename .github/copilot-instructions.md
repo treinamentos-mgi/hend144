@@ -1,22 +1,28 @@
-# Descrição do Projeto
+---
+description: "Instruções para usar sempre que criar ou editar arquivos markdown de assignment, garantindo consistência e clareza para os alunos."
+applyTo: "assignments/**/*.md"
+---
 
-Este projeto é um site educacional para compartilhar tarefas e exercícios de programação com os alunos. Os alunos podem navegar, visualizar e baixar tarefas diretamente pelo portal.
+# Diretrizes de Estrutura para Markdowns de Tarefas
 
-## Estrutura do Projeto
+Todos os arquivos markdown de tarefas devem seguir estas diretrizes:
 
-- [`assignments/`](../assignments/) Cada tarefa é armazenada em sua própria subpasta com uma estrutura consistente.
-- [`templates/`](../templates/) Templates reutilizáveis para novo conteúdo
-- [`assets/`](../assets/) Contém os recursos do site incluindo CSS, JavaScript, imagens e arquivos de configuração
-- [`index.html`](../index.html) A página principal do site que serve como um portal estático para navegar e visualizar tarefas. O conteúdo é configurável via arquivo [`config.json`](../config.json) para gerar dinamicamente listas e detalhes das tarefas.
+## 1. Uso do Template
 
-## Diretrizes do Projeto
+- Os arquivos markdown de tarefas devem seguir a estrutura em [`templates/assignment-template.md`](../../templates/assignment-template.md).
+- A tarefa deve ser criada como um arquivo `README.md`
+- Não remova ou pule seções obrigatórias do template.
 
-- Manter estilo consistente em todas as páginas
-- Manter nomes de arquivos e pastas descritivos e organizados
+## 2. Orientação das Seções
 
-## Padrões Educacionais
+Os cabeçalhos das seções devem usar EXATAMENTE o mesmo texto do template, incluindo os ícones emoji. NÃO traduza os cabeçalhos.
 
-Ao gerar conteúdo para este projeto:
+- `# 📘 Assignment: [Assignment Title]` — Substitua `[Assignment Title]` por um nome curto e descritivo (ex: `Python Basics`, `Loops and Conditionals`, `Functions and Modules`).
+- `## 🎯 Objective` — Escreva 1-2 frases resumindo o que o aluno aprenderá ou realizará. Foque nas principais habilidades ou conceitos.
+- `## 📝 Tasks` — Para cada tarefa, use `### 🛠️ [Task Title]`:
+   - Use um nome de tarefa específico e orientado à ação
+   - Na Descrição, indique claramente o que o aluno deve fazer.
+   - Nos Requisitos, use bullet points para listar os resultados ou funcionalidades esperadas. Seja específico e mensurável
+   - Forneça exemplos de entrada/saída em blocos de código se útil.
 
-- **Foco no aprendizado**: Todo conteúdo deve ser elaborado com objetivos de aprendizado claros e níveis de dificuldade apropriados
-- **Amigável ao aluno**: Usar linguagem clara e encorajadora que motive os alunos
+Não inclua seções extras a menos que explicitamente especificado.
