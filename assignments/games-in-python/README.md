@@ -1,11 +1,11 @@
 
-# 📘 Assignment: Jogo da Forca
+# 📘 Atividade: Jogo da Forca
 
-## 🎯 Objective
+## 🎯 Objetivo
 
 Pratique manipulação de strings, loops, condicionais e seleção aleatória ao implementar o clássico jogo da Forca em Python.
 
-## 📝 Tasks
+## 📝 Tarefas
 
 ### 🛠️ Selecionando a palavra e recebendo palpites
 
